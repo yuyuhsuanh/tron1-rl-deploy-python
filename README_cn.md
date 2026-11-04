@@ -16,7 +16,7 @@
 
 # tron1-rl-deploy-python
 
-> **TRON1 开源生态的一部分。** TRON1 全部开源仓库和上手路线：[TRON1 开源生态](https://github.com/limxdynamics/tron1-rl-isaacgym/blob/master/README_cn.md#tron1-开源生态)。
+> **TRON1 开源生态的一部分。** 上手路线和其他 TRON1 仓库：[TRON1 快速上手](https://github.com/limxdynamics/limxdynamics/blob/main/doc/quickstart_cn.md#tron1)。
 
 用 Python 在 TRON1 双足机器人上部署强化学习运动策略，支持点足（`PF_*`）、足板（`SF_*`）和轮足（`WF_*`）。`main.py` 用 `onnxruntime` 加载 ONNX 策略和历史编码器，通过 LimX 底层 SDK 下发关节目标，既可对接 [tron1-mujoco-sim](https://github.com/limxdynamics/tron1-mujoco-sim) 仿真器，也可直接驱动真机。
 
