@@ -42,6 +42,9 @@ if __name__ == '__main__':
     if robot_type.startswith("PF"):
       controller = controllers.PointfootController(f'{os.path.dirname(os.path.abspath(__file__))}/controllers/model', robot, robot_type, rl_type, start_controller)
       controller.run()
+    elif robot_type == "WF_TRON1A_BRAKE":
+      controller = controllers.BrakeWheelfootController(f'{os.path.dirname(os.path.abspath(__file__))}/controllers/model', robot, robot_type, rl_type, start_controller)
+      controller.run()
     elif robot_type.startswith("WF"):
       controller = controllers.WheelfootController(f'{os.path.dirname(os.path.abspath(__file__))}/controllers/model', robot, robot_type, rl_type, start_controller)
       controller.run()
